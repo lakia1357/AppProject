@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signlinear"
+    android:gravity="center|top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#194C80"
+        android:textStyle="bold"
+        android:text="사용자 계정 생성"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/gallery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/idEdit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:drawableLeft="@drawable/userimg_customise"
+            android:drawablePadding="10dp"
+            android:hint="ID" />
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#194C80"
+            android:text="CHECK"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickCheck"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pwEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/pwimg_customise"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/nameimg_customise"
+        android:drawablePadding="10dp"
+        android:hint="이름" />
+
+    <Button
+        android:id="@+id/joinButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:backgroundTint="#194C80"
+        android:text="가입"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:onClick="onClickAdd"
+        />
+
+</LinearLayout>
